@@ -8,7 +8,9 @@ template:
     repo: ci-travis-template
 before:
 - type: updateBranchProtection
-  enforce_admins: false
+  enforce_admins: null
+  branch: initial-travis-config
+  # required_status_checks: false
   # open issue 1 (welcome)
 - type: createIssue
   title: Welcome
